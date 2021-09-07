@@ -63,13 +63,19 @@ xdotool key Right
 xdotool key Right
 xdotool key Right
 xdotool key Up
-xdotool type 'Wake Up Music'
+xdotool type 'wakey wakey'
 xdotool key Return
-xdotool key Down
+sleep 0.5
+xdotool key l
+sleep 0.5
+xdotool key l
+sleep 0.5
+xdotool key l
 sleep 0.5
 xdotool key z
+xdotool key Return
 
-for (( i=0; i<70; i++)); do
+for (( i=0; i<70; i++ )); do
   xdotool key minus
 done
 
@@ -79,5 +85,5 @@ xdotool key Return
 for (( i=0; i<70; i++ )); do
   sleep 0.2
   xdotool key plus
-#  spotify volume up 10
 done
+
